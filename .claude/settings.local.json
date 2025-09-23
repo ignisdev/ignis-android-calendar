@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm:*)",
+      "Bash(gradle:*)",
+      "Bash(mkdir:*)",
+      "Bash(curl:*)",
+      "Bash(chmod:*)",
+      "Bash(./gradlew:*)",
+      "Bash(echo $ANDROID_HOME)",
+      "Read(//Users/eamon/Library/Android/sdk/**)",
+      "Bash(java:*)",
+      "Bash(echo $JAVA_HOME)",
+      "Bash(source:*)",
+      "Bash(sdk install:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

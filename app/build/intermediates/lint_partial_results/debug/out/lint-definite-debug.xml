@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.4" type="incidents">
+
+    <incident
+        id="GradleOverrides"
+        severity="warning"
+        message="This `minSdkVersion` value (`22`) is not used; it is always overridden by the value specified in the Gradle build script (`22`)">
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="6"
+            column="9"
+            startOffset="170"
+            endLine="6"
+            endColumn="35"
+            endOffset="196"/>
+    </incident>
+
+    <incident
+        id="GradleOverrides"
+        severity="warning"
+        message="This `targetSdkVersion` value (`22`) is not used; it is always overridden by the value specified in the Gradle build script (`34`)">
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="7"
+            column="9"
+            startOffset="205"
+            endLine="7"
+            endColumn="38"
+            endOffset="234"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 36"
+            oldPattern="targetSdkVersion\s*=\s*[&quot;&apos;](.*)[&quot;&apos;]"
+            replacement="36"/>
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="7"
+            column="9"
+            startOffset="205"
+            endLine="7"
+            endColumn="38"
+            endOffset="234"/>
+    </incident>
+
+    <incident
+        id="DisableBaselineAlignment"
+        severity="warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance">
+        <fix-attribute
+            description="Set baselineAligned=&quot;false&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="baselineAligned"
+            value="false"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="14"
+            column="10"
+            startOffset="439"
+            endLine="14"
+            endColumn="22"
+            endOffset="451"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Conference Room A&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="31"
+            column="21"
+            startOffset="1093"
+            endLine="31"
+            endColumn="53"
+            endOffset="1125"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Building 1 • Floor 3 • Capacity: 12&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="40"
+            column="21"
+            startOffset="1477"
+            endLine="40"
+            endColumn="71"
+            endOffset="1527"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;14:30&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="56"
+            column="21"
+            startOffset="2081"
+            endLine="56"
+            endColumn="41"
+            endOffset="2101"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Monday, September 23, 2025&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="66"
+            column="21"
+            startOffset="2504"
+            endLine="66"
+            endColumn="62"
+            endOffset="2545"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Connected&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="74"
+            column="21"
+            startOffset="2852"
+            endLine="74"
+            endColumn="45"
+            endOffset="2876"/>
+    </incident>
+
+    <incident
+        id="DisableBaselineAlignment"
+        severity="warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance">
+        <fix-attribute
+            description="Set baselineAligned=&quot;false&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="baselineAligned"
+            value="false"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="94"
+            column="14"
+            startOffset="3485"
+            endLine="94"
+            endColumn="26"
+            endOffset="3497"/>
+    </incident>
+
+    <incident
+        id="UselessParent"
+        severity="warning"
+        message="This `LinearLayout` layout or its `LinearLayout` parent is unnecessary">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="99"
+            column="18"
+            startOffset="3671"
+            endLine="99"
+            endColumn="30"
+            endOffset="3683"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;AVAILABLE&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="109"
+            column="25"
+            startOffset="4116"
+            endLine="109"
+            endColumn="49"
+            endOffset="4140"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Next meeting at 15:30&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="119"
+            column="25"
+            startOffset="4594"
+            endLine="119"
+            endColumn="61"
+            endOffset="4630"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Team Meeting&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="144"
+            column="21"
+            startOffset="5566"
+            endLine="144"
+            endColumn="48"
+            endOffset="5593"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Organizer: John Doe&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="154"
+            column="21"
+            startOffset="6022"
+            endLine="154"
+            endColumn="55"
+            endOffset="6056"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;14:00 - 15:00&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="169"
+            column="25"
+            startOffset="6694"
+            endLine="169"
+            endColumn="53"
+            endOffset="6722"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;8 attendees&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="179"
+            column="25"
+            startOffset="7185"
+            endLine="179"
+            endColumn="51"
+            endOffset="7211"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;25 minutes remaining&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="192"
+            column="21"
+            startOffset="7717"
+            endLine="192"
+            endColumn="56"
+            endOffset="7752"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;📅&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="222"
+            column="21"
+            startOffset="8806"
+            endLine="222"
+            endColumn="38"
+            endOffset="8823"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Today&apos;s Schedule&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="229"
+            column="21"
+            startOffset="9085"
+            endLine="229"
+            endColumn="52"
+            endOffset="9116"/>
+    </incident>
+
+    <incident
+        id="NestedScrolling"
+        severity="warning"
+        message="The vertically scrolling `ScrollView` should not contain another vertically scrolling widget (`ListView`)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="236"
+            column="14"
+            startOffset="9300"
+            endLine="236"
+            endColumn="22"
+            endOffset="9308"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Display updates automatically • Last refreshed: 14:30&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="257"
+            column="17"
+            startOffset="10061"
+            endLine="257"
+            endColumn="85"
+            endOffset="10129"/>
+    </incident>
+
+    <incident
+        id="DisableBaselineAlignment"
+        severity="warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance">
+        <fix-attribute
+            description="Set baselineAligned=&quot;false&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="baselineAligned"
+            value="false"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/meeting_list_item.xml"
+            line="2"
+            column="2"
+            startOffset="40"
+            endLine="2"
+            endColumn="14"
+            endOffset="52"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Team Meeting&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/meeting_list_item.xml"
+            line="19"
+            column="13"
+            startOffset="636"
+            endLine="19"
+            endColumn="40"
+            endOffset="663"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Organizer: John Doe&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/meeting_list_item.xml"
+            line="29"
+            column="13"
+            startOffset="999"
+            endLine="29"
+            endColumn="47"
+            endOffset="1033"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;14:00 - 15:00&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/meeting_list_item.xml"
+            line="45"
+            column="13"
+            startOffset="1483"
+            endLine="45"
+            endColumn="41"
+            endOffset="1511"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;8 attendees&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/meeting_list_item.xml"
+            line="55"
+            column="13"
+            startOffset="1847"
+            endLine="55"
+            endColumn="39"
+            endOffset="1873"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Currently Active&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/meeting_list_item.xml"
+            line="64"
+            column="13"
+            startOffset="2169"
+            endLine="64"
+            endColumn="44"
+            endOffset="2200"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="179"
+            column="40"
+            startOffset="6722"
+            endLine="179"
+            endColumn="51"
+            endOffset="6733"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="186"
+            column="40"
+            startOffset="7025"
+            endLine="186"
+            endColumn="48"
+            endOffset="7033"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="193"
+            column="40"
+            startOffset="7307"
+            endLine="193"
+            endColumn="51"
+            endOffset="7318"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="204"
+            column="45"
+            startOffset="7703"
+            endLine="204"
+            endColumn="85"
+            endOffset="7743"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="204"
+            column="45"
+            startOffset="7703"
+            endLine="204"
+            endColumn="58"
+            endOffset="7716"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="205"
+            column="40"
+            startOffset="7785"
+            endLine="206"
+            endColumn="86"
+            endOffset="7917"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="207"
+            column="45"
+            startOffset="7964"
+            endLine="207"
+            endColumn="84"
+            endOffset="8003"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="207"
+            column="72"
+            startOffset="7991"
+            endLine="207"
+            endColumn="84"
+            endOffset="8003"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="228"
+            column="39"
+            startOffset="8687"
+            endLine="228"
+            endColumn="98"
+            endOffset="8746"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="228"
+            column="39"
+            startOffset="8687"
+            endLine="228"
+            endColumn="54"
+            endOffset="8702"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="230"
+            column="39"
+            startOffset="8829"
+            endLine="230"
+            endColumn="100"
+            endOffset="8890"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="230"
+            column="39"
+            startOffset="8829"
+            endLine="230"
+            endColumn="57"
+            endOffset="8847"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="232"
+            column="39"
+            startOffset="8948"
+            endLine="232"
+            endColumn="74"
+            endOffset="8983"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="241"
+            column="39"
+            startOffset="9303"
+            endLine="241"
+            endColumn="78"
+            endOffset="9342"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="241"
+            column="58"
+            startOffset="9322"
+            endLine="241"
+            endColumn="78"
+            endOffset="9342"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="253"
+            column="39"
+            startOffset="9783"
+            endLine="253"
+            endColumn="87"
+            endOffset="9831"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="253"
+            column="39"
+            startOffset="9783"
+            endLine="253"
+            endColumn="59"
+            endOffset="9803"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MainActivity.java"
+            line="253"
+            column="77"
+            startOffset="9821"
+            endLine="253"
+            endColumn="87"
+            endOffset="9831"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MeetingListAdapter.java"
+            line="64"
+            column="34"
+            startOffset="2251"
+            endLine="64"
+            endColumn="67"
+            endOffset="2284"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MeetingListAdapter.java"
+            line="64"
+            column="34"
+            startOffset="2251"
+            endLine="64"
+            endColumn="47"
+            endOffset="2264"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MeetingListAdapter.java"
+            line="65"
+            column="29"
+            startOffset="2315"
+            endLine="65"
+            endColumn="110"
+            endOffset="2396"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MeetingListAdapter.java"
+            line="66"
+            column="34"
+            startOffset="2432"
+            endLine="66"
+            endColumn="66"
+            endOffset="2464"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MeetingListAdapter.java"
+            line="66"
+            column="54"
+            startOffset="2452"
+            endLine="66"
+            endColumn="66"
+            endOffset="2464"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/meetingroom/display/MeetingListAdapter.java"
+            line="71"
+            column="35"
+            startOffset="2686"
+            endLine="71"
+            endColumn="53"
+            endOffset="2704"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 36"
+            oldString="34"
+            replacement="36"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="10"
+            column="9"
+            startOffset="215"
+            endLine="10"
+            endColumn="28"
+            endOffset="234"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1">
+        <fix-replace
+            description="Change to 1.7.1"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.7.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="29"
+            column="20"
+            startOffset="641"
+            endLine="29"
+            endColumn="56"
+            endOffset="677"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `#F5F5F5` with a theme that also paints a background (inferred theme is `@android_style/Theme_NoTitleBar_Fullscreen`)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="5"
+            column="5"
+            startOffset="195"
+            endLine="5"
+            endColumn="33"
+            endOffset="223"/>
+    </incident>
+
+    <incident
+        id="IconDipSize"
+        severity="warning"
+        message="The image `ic_launcher.png` varies significantly in its density-independent (dip) size across the various density versions: mipmap-hdpi/ic_launcher.png: 48x48 dp (72x72 px), mipmap-mdpi/ic_launcher.png: 48x48 dp (48x48 px), mipmap-xhdpi/ic_launcher.png: 48x48 dp (96x96 px), mipmap-xxhdpi/ic_launcher.png: 32x32 dp (96x96 px), mipmap-xxxhdpi/ic_launcher.png: 24x24 dp (96x96 px)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-xxxhdpi/ic_launcher.png"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-xxhdpi/ic_launcher.png"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-mdpi/ic_launcher.png"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-xhdpi/ic_launcher.png"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-hdpi/ic_launcher.png"/>
+    </incident>
+
+    <incident
+        id="IconDuplicatesConfig"
+        severity="warning"
+        message="The `ic_launcher.png` icon has identical contents in the following configuration folders: mipmap-xhdpi, mipmap-xxhdpi, mipmap-xxxhdpi">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-xxxhdpi/ic_launcher.png"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-xxhdpi/ic_launcher.png"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-xhdpi/ic_launcher.png"/>
+    </incident>
+
+</incidents>

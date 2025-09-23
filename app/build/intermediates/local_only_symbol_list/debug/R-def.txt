@@ -1,0 +1,27 @@
+R_DEF: Internal format may change without notice
+local
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+id current_date
+id current_meeting_attendees
+id current_meeting_layout
+id current_meeting_organizer
+id current_meeting_time
+id current_meeting_title
+id current_time
+id meeting_attendees
+id meeting_organizer
+id meeting_status
+id meeting_time
+id meeting_title
+id next_available
+id remaining_time
+id room_status
+id status_container
+id today_schedule_list
+layout activity_main
+layout meeting_list_item
+mipmap ic_launcher
+string app_name
+style AppTheme

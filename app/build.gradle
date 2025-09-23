@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace "com.meetingroom.display"
+    compileSdk 34
+    
+    defaultConfig {
+        applicationId "com.meetingroom.display"
+        minSdkVersion 22
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    // Add the Microsoft Graph SDK for Java
+    // implementation 'com.microsoft.graph:microsoft-graph:5.44.0'
+    // implementation 'com.azure:azure-identity:1.9.0'
+}
