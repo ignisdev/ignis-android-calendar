@@ -5,29 +5,72 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="22"
+        android:minSdkVersion="26"
         android:targetSdkVersion="34" />
 
-    <!-- Permissions for network access (for future calendar integration) -->
+    <!-- Permissions for Microsoft Graph and calendar integration -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <!-- Optional: for offline token storage -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--
+     Required for API Level 30 to make sure we can detect browsers and other apps we want to
+     be able to talk to.
+    -->
+    <!-- https://developer.android.com/training/basics/intents/package-visibility-use-cases -->
+    <queries>
+        <package android:name="com.azure.authenticator" />
+        <package android:name="com.microsoft.identity.testuserapp" />
+        <package android:name="com.microsoft.windowsintune.companyportal" />
+        <package android:name="com.microsoft.mockauthapp" />
+        <package android:name="com.microsoft.mockcp" />
+        <package android:name="com.microsoft.mockltw" />
+        <package android:name="com.microsoft.appmanager" />
+        <!--
+        Required for API Level 30 to make sure we can detect browsers
+        (that don't support custom tabs)
+        -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="https" />
+        </intent>
+        <!-- Required for API Level 30 to make sure we can detect browsers that support custom tabs -->
+        <!-- https://developers.google.com/web/updates/2020/07/custom-tabs-android-11#detecting_browsers_that_support_custom_tabs -->
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+    </queries>
 
     <permission
         android:name="com.meetingroom.display.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
     <uses-permission android:name="com.meetingroom.display.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:extractNativeLibs="true"
+        android:extractNativeLibs="false"
         android:icon="@mipmap/ic_launcher"
         android:label="Meeting Room Display"
-        android:testOnly="true"
+        android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         <activity
             android:name="com.meetingroom.display.MainActivity"
@@ -51,6 +94,36 @@
             </intent-filter>
         </activity>
 
+        <!-- MSAL activity that will be used to process all the auth related logic -->
+        <activity
+            android:name="com.microsoft.identity.common.internal.providers.oauth2.AuthorizationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout|keyboard"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.microsoft.identity.common.internal.providers.oauth2.CurrentTaskAuthorizationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout|keyboard"
+            android:exported="false"
+            android:launchMode="standard" /> <!-- Helper activity for displaying current broker redirect URI configuration -->
+        <activity
+            android:name="com.microsoft.identity.client.helper.BrokerHelperActivity"
+            android:exported="false"
+            android:launchMode="standard" /> <!-- MSAL will use system webview (custom tab) to render the sign-in page, BrowserTabActivity is to get response back from System Webview. Multiple apps on the device could integrate MSAL, OS will check which BrowserTabActivity can handle the intent based on the intent filter declared, so this activity has to be exported. -->
+        <activity
+            android:name="com.microsoft.identity.client.BrowserTabActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
+            android:exported="true" />
+        <activity
+            android:name="com.microsoft.identity.client.CurrentTaskBrowserTabActivity"
+            android:exported="true" /> <!-- Activity to invoke an interactive request to the intent passed by ad-accounts(Broker) -->
+        <activity
+            android:name="com.microsoft.identity.common.internal.broker.BrokerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout|keyboard" /> <!-- Activity to launch a install WPJ certificate activity and get the result -->
+        <activity
+            android:name="com.microsoft.identity.common.internal.broker.InstallCertActivityLauncher"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout|keyboard"
+            android:theme="@style/Theme.AppCompat.Light" />
+
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.meetingroom.display.androidx-startup"
@@ -62,6 +135,17 @@
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
         </provider>
+
+        <activity
+            android:name="com.yubico.yubikit.android.ui.OtpActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/yubikit_otp_activity_title"
+            android:theme="@style/YubiKitPromptDialogTheme" />
+        <activity
+            android:name="com.yubico.yubikit.android.ui.YubiKeyPromptActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/yubikit_prompt_activity_title"
+            android:theme="@style/YubiKitPromptDialogTheme" />
     </application>
 
 </manifest>

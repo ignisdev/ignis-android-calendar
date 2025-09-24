@@ -6,12 +6,12 @@
 6
 7    <uses-sdk
 7-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:5:5-7:41
-8        android:minSdkVersion="22"
+8        android:minSdkVersion="26"
 8-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:6:9-35
 9        android:targetSdkVersion="34" />
 9-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:7:9-38
 10
-11    <!-- Permissions for network access (for future calendar integration) -->
+11    <!-- Permissions for Microsoft Graph and calendar integration -->
 12    <uses-permission android:name="android.permission.INTERNET" />
 12-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:10:5-67
 12-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:10:22-64
@@ -25,92 +25,253 @@
 15-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:13:5-75
 15-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:13:22-72
 16
-17    <permission
-17-->[androidx.core:core:1.9.0] /Users/eamon/.gradle/caches/transforms-3/47e328fbb9a6da19e7cdd96cc41cfa33/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
-18        android:name="com.meetingroom.display.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-18-->[androidx.core:core:1.9.0] /Users/eamon/.gradle/caches/transforms-3/47e328fbb9a6da19e7cdd96cc41cfa33/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
-19        android:protectionLevel="signature" />
-19-->[androidx.core:core:1.9.0] /Users/eamon/.gradle/caches/transforms-3/47e328fbb9a6da19e7cdd96cc41cfa33/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+17    <!-- Optional: for offline token storage -->
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:16:5-80
+18-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:16:22-77
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:17:5-81
+19-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:17:22-78
 20
-21    <uses-permission android:name="com.meetingroom.display.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-21-->[androidx.core:core:1.9.0] /Users/eamon/.gradle/caches/transforms-3/47e328fbb9a6da19e7cdd96cc41cfa33/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
-21-->[androidx.core:core:1.9.0] /Users/eamon/.gradle/caches/transforms-3/47e328fbb9a6da19e7cdd96cc41cfa33/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
-22
-23    <application
-23-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:15:5-41:19
-24        android:allowBackup="true"
-24-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:16:9-35
-25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-25-->[androidx.core:core:1.9.0] /Users/eamon/.gradle/caches/transforms-3/47e328fbb9a6da19e7cdd96cc41cfa33/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
-26        android:extractNativeLibs="true"
-27        android:icon="@mipmap/ic_launcher"
-27-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:17:9-43
-28        android:label="Meeting Room Display"
-28-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:18:9-45
-29        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
-29-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:19:9-67
-30        <activity
-30-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:21:9-39:20
-31            android:name="com.meetingroom.display.MainActivity"
-31-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:22:13-41
-32            android:configChanges="orientation|keyboardHidden|screenSize"
-32-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:23:13-74
-33            android:exported="true"
-33-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:24:13-36
-34            android:launchMode="singleTask"
-34-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:25:13-44
-35            android:screenOrientation="landscape"
-35-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:26:13-50
-36            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
-36-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:27:13-71
-37            <intent-filter>
-37-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:28:13-31:29
-38                <action android:name="android.intent.action.MAIN" />
-38-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:29:17-69
-38-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:29:25-66
-39
-40                <category android:name="android.intent.category.LAUNCHER" />
-40-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:30:17-77
-40-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:30:27-74
-41            </intent-filter>
+21    <!--
+22     Required for API Level 30 to make sure we can detect browsers and other apps we want to
+23     be able to talk to.
+24    -->
+25    <!-- https://developer.android.com/training/basics/intents/package-visibility-use-cases -->
+26    <queries>
+26-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:17:5-41:15
+27        <package android:name="com.azure.authenticator" />
+27-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:18:9-59
+27-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:18:18-56
+28        <package android:name="com.microsoft.identity.testuserapp" />
+28-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:19:9-70
+28-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:19:18-67
+29        <package android:name="com.microsoft.windowsintune.companyportal" />
+29-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:20:9-77
+29-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:20:18-74
+30        <package android:name="com.microsoft.mockauthapp" />
+30-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:21:9-61
+30-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:21:18-58
+31        <package android:name="com.microsoft.mockcp" />
+31-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:22:9-56
+31-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:22:18-53
+32        <package android:name="com.microsoft.mockltw" />
+32-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:23:9-57
+32-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:23:18-54
+33        <package android:name="com.microsoft.appmanager" />
+33-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:24:9-60
+33-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:24:18-57
+34        <!--
+35        Required for API Level 30 to make sure we can detect browsers
+36        (that don't support custom tabs)
+37        -->
+38        <intent>
+38-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:29:9-35:18
+39            <action android:name="android.intent.action.VIEW" />
+39-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:30:13-65
+39-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:30:21-62
+40
+41            <category android:name="android.intent.category.BROWSABLE" />
+41-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:32:13-74
+41-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:32:23-71
 42
-43            <!-- For kiosk mode -->
-44            <intent-filter>
-44-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:34:13-38:29
-45                <action android:name="android.intent.action.MAIN" />
-45-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:29:17-69
-45-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:29:25-66
-46
-47                <category android:name="android.intent.category.HOME" />
-47-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:36:17-73
-47-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:36:27-70
-48                <category android:name="android.intent.category.DEFAULT" />
-48-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:37:17-76
-48-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:37:27-73
-49            </intent-filter>
-50        </activity>
+43            <data android:scheme="https" />
+43-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:34:13-44
+43-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:34:19-41
+44        </intent>
+45        <!-- Required for API Level 30 to make sure we can detect browsers that support custom tabs -->
+46        <!-- https://developers.google.com/web/updates/2020/07/custom-tabs-android-11#detecting_browsers_that_support_custom_tabs -->
+47        <intent>
+47-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:38:9-40:18
+48            <action android:name="android.support.customtabs.action.CustomTabsService" />
+48-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:39:13-90
+48-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:39:21-87
+49        </intent>
+50    </queries>
 51
-52        <provider
-52-->[androidx.emoji2:emoji2:1.2.0] /Users/eamon/.gradle/caches/transforms-3/97e468b2ae8f16656080115164696a75/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-53            android:name="androidx.startup.InitializationProvider"
-53-->[androidx.emoji2:emoji2:1.2.0] /Users/eamon/.gradle/caches/transforms-3/97e468b2ae8f16656080115164696a75/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-54            android:authorities="com.meetingroom.display.androidx-startup"
-54-->[androidx.emoji2:emoji2:1.2.0] /Users/eamon/.gradle/caches/transforms-3/97e468b2ae8f16656080115164696a75/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
-55            android:exported="false" >
-55-->[androidx.emoji2:emoji2:1.2.0] /Users/eamon/.gradle/caches/transforms-3/97e468b2ae8f16656080115164696a75/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
-56            <meta-data
-56-->[androidx.emoji2:emoji2:1.2.0] /Users/eamon/.gradle/caches/transforms-3/97e468b2ae8f16656080115164696a75/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-57                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-57-->[androidx.emoji2:emoji2:1.2.0] /Users/eamon/.gradle/caches/transforms-3/97e468b2ae8f16656080115164696a75/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
-58                android:value="androidx.startup" />
-58-->[androidx.emoji2:emoji2:1.2.0] /Users/eamon/.gradle/caches/transforms-3/97e468b2ae8f16656080115164696a75/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
-59            <meta-data
-59-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/eamon/.gradle/caches/transforms-3/ab97335a65fd3990eb1de4486ad16c03/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-60                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-60-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/eamon/.gradle/caches/transforms-3/ab97335a65fd3990eb1de4486ad16c03/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-61                android:value="androidx.startup" />
-61-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/eamon/.gradle/caches/transforms-3/ab97335a65fd3990eb1de4486ad16c03/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-62        </provider>
-63    </application>
-64
-65</manifest>
+52    <permission
+52-->[androidx.core:core:1.9.0] /Users/eamon/.gradle/caches/transforms-3/47e328fbb9a6da19e7cdd96cc41cfa33/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+53        android:name="com.meetingroom.display.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+53-->[androidx.core:core:1.9.0] /Users/eamon/.gradle/caches/transforms-3/47e328fbb9a6da19e7cdd96cc41cfa33/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+54        android:protectionLevel="signature" />
+54-->[androidx.core:core:1.9.0] /Users/eamon/.gradle/caches/transforms-3/47e328fbb9a6da19e7cdd96cc41cfa33/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+55
+56    <uses-permission android:name="com.meetingroom.display.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+56-->[androidx.core:core:1.9.0] /Users/eamon/.gradle/caches/transforms-3/47e328fbb9a6da19e7cdd96cc41cfa33/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+56-->[androidx.core:core:1.9.0] /Users/eamon/.gradle/caches/transforms-3/47e328fbb9a6da19e7cdd96cc41cfa33/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+57    <uses-permission android:name="android.permission.NFC" />
+57-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:7:5-62
+57-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:7:22-59
+58
+59    <uses-feature
+59-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:9:5-11:36
+60        android:name="android.hardware.usb.host"
+60-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:10:9-49
+61        android:required="false" />
+61-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:11:9-33
+62    <uses-feature
+62-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:12:5-14:36
+63        android:name="android.hardware.nfc"
+63-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:13:9-44
+64        android:required="false" />
+64-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:14:9-33
+65
+66    <application
+66-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:19:5-45:19
+67        android:allowBackup="true"
+67-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:20:9-35
+68        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+68-->[androidx.core:core:1.9.0] /Users/eamon/.gradle/caches/transforms-3/47e328fbb9a6da19e7cdd96cc41cfa33/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+69        android:extractNativeLibs="false"
+70        android:icon="@mipmap/ic_launcher"
+70-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:21:9-43
+71        android:label="Meeting Room Display"
+71-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:22:9-45
+72        android:supportsRtl="true"
+72-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:16:18-44
+73        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+73-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:23:9-67
+74        <activity
+74-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:25:9-43:20
+75            android:name="com.meetingroom.display.MainActivity"
+75-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:26:13-41
+76            android:configChanges="orientation|keyboardHidden|screenSize"
+76-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:27:13-74
+77            android:exported="true"
+77-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:28:13-36
+78            android:launchMode="singleTask"
+78-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:29:13-44
+79            android:screenOrientation="landscape"
+79-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:30:13-50
+80            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+80-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:31:13-71
+81            <intent-filter>
+81-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:32:13-35:29
+82                <action android:name="android.intent.action.MAIN" />
+82-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:33:17-69
+82-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:33:25-66
+83
+84                <category android:name="android.intent.category.LAUNCHER" />
+84-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:34:17-77
+84-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:34:27-74
+85            </intent-filter>
+86
+87            <!-- For kiosk mode -->
+88            <intent-filter>
+88-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:38:13-42:29
+89                <action android:name="android.intent.action.MAIN" />
+89-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:33:17-69
+89-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:33:25-66
+90
+91                <category android:name="android.intent.category.HOME" />
+91-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:40:17-73
+91-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:40:27-70
+92                <category android:name="android.intent.category.DEFAULT" />
+92-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:41:17-76
+92-->/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:41:27-73
+93            </intent-filter>
+94        </activity>
+95
+96        <!-- MSAL activity that will be used to process all the auth related logic -->
+97        <activity
+97-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:13:9-17:47
+98            android:name="com.microsoft.identity.common.internal.providers.oauth2.AuthorizationActivity"
+98-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:14:13-105
+99            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout|keyboard"
+99-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:15:13-115
+100            android:exported="false"
+100-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:16:13-37
+101            android:launchMode="singleTask" />
+101-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:17:13-44
+102        <activity
+102-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:18:9-22:45
+103            android:name="com.microsoft.identity.common.internal.providers.oauth2.CurrentTaskAuthorizationActivity"
+103-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:19:13-116
+104            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout|keyboard"
+104-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:20:13-115
+105            android:exported="false"
+105-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:21:13-37
+106            android:launchMode="standard" /> <!-- Helper activity for displaying current broker redirect URI configuration -->
+106-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:22:13-42
+107        <activity
+107-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:25:9-28:45
+108            android:name="com.microsoft.identity.client.helper.BrokerHelperActivity"
+108-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:26:13-85
+109            android:exported="false"
+109-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:27:13-37
+110            android:launchMode="standard" /> <!-- MSAL will use system webview (custom tab) to render the sign-in page, BrowserTabActivity is to get response back from System Webview. Multiple apps on the device could integrate MSAL, OS will check which BrowserTabActivity can handle the intent based on the intent filter declared, so this activity has to be exported. -->
+110-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:28:13-42
+111        <activity
+111-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:31:9-34:39
+112            android:name="com.microsoft.identity.client.BrowserTabActivity"
+112-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:32:13-76
+113            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
+113-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:33:13-106
+114            android:exported="true" />
+114-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:34:13-36
+115        <activity
+115-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:35:9-37:39
+116            android:name="com.microsoft.identity.client.CurrentTaskBrowserTabActivity"
+116-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:36:13-87
+117            android:exported="true" /> <!-- Activity to invoke an interactive request to the intent passed by ad-accounts(Broker) -->
+117-->[com.microsoft.identity.client:msal:4.9.0] /Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/AndroidManifest.xml:37:13-36
+118        <activity
+118-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:54:9-56:99
+119            android:name="com.microsoft.identity.common.internal.broker.BrokerActivity"
+119-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:55:13-88
+120            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout|keyboard" /> <!-- Activity to launch a install WPJ certificate activity and get the result -->
+120-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:56:13-96
+121        <activity
+121-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:58:9-61:60
+122            android:name="com.microsoft.identity.common.internal.broker.InstallCertActivityLauncher"
+122-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:59:13-101
+123            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout|keyboard"
+123-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:60:13-96
+124            android:theme="@style/Theme.AppCompat.Light" />
+124-->[com.microsoft.identity:common:16.1.0] /Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/AndroidManifest.xml:61:13-57
+125
+126        <provider
+126-->[androidx.emoji2:emoji2:1.2.0] /Users/eamon/.gradle/caches/transforms-3/98441c11c46f6419e4f55d0f1c9541f5/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+127            android:name="androidx.startup.InitializationProvider"
+127-->[androidx.emoji2:emoji2:1.2.0] /Users/eamon/.gradle/caches/transforms-3/98441c11c46f6419e4f55d0f1c9541f5/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+128            android:authorities="com.meetingroom.display.androidx-startup"
+128-->[androidx.emoji2:emoji2:1.2.0] /Users/eamon/.gradle/caches/transforms-3/98441c11c46f6419e4f55d0f1c9541f5/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+129            android:exported="false" >
+129-->[androidx.emoji2:emoji2:1.2.0] /Users/eamon/.gradle/caches/transforms-3/98441c11c46f6419e4f55d0f1c9541f5/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+130            <meta-data
+130-->[androidx.emoji2:emoji2:1.2.0] /Users/eamon/.gradle/caches/transforms-3/98441c11c46f6419e4f55d0f1c9541f5/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+131                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+131-->[androidx.emoji2:emoji2:1.2.0] /Users/eamon/.gradle/caches/transforms-3/98441c11c46f6419e4f55d0f1c9541f5/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+132                android:value="androidx.startup" />
+132-->[androidx.emoji2:emoji2:1.2.0] /Users/eamon/.gradle/caches/transforms-3/98441c11c46f6419e4f55d0f1c9541f5/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+133            <meta-data
+133-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/eamon/.gradle/caches/transforms-3/3285ad8cd6936baf05f330eb2a872533/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+134                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+134-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/eamon/.gradle/caches/transforms-3/3285ad8cd6936baf05f330eb2a872533/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+135                android:value="androidx.startup" />
+135-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/eamon/.gradle/caches/transforms-3/3285ad8cd6936baf05f330eb2a872533/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+136        </provider>
+137
+138        <activity
+138-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:17:9-21:63
+139            android:name="com.yubico.yubikit.android.ui.OtpActivity"
+139-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:18:13-69
+140            android:excludeFromRecents="true"
+140-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:19:13-46
+141            android:label="@string/yubikit_otp_activity_title"
+141-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:20:13-63
+142            android:theme="@style/YubiKitPromptDialogTheme" />
+142-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:21:13-60
+143        <activity
+143-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:22:9-26:63
+144            android:name="com.yubico.yubikit.android.ui.YubiKeyPromptActivity"
+144-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:23:13-79
+145            android:excludeFromRecents="true"
+145-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:24:13-46
+146            android:label="@string/yubikit_prompt_activity_title"
+146-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:25:13-66
+147            android:theme="@style/YubiKitPromptDialogTheme" />
+147-->[com.yubico.yubikit:android:2.3.0] /Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/AndroidManifest.xml:26:13-60
+148    </application>
+149
+150</manifest>

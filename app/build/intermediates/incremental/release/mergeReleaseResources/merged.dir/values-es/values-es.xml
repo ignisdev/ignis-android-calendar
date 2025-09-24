@@ -27,6 +27,52 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Compartir con"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Compartir con <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Ocultar"</string>
+    <string name="app_loading">Cargando…</string>
+    <string name="broker_processing">El agente se está procesando</string>
+    <string name="http_auth_dialog_cancel">Cancelar</string>
+    <string name="http_auth_dialog_login">Inicio de sesión</string>
+    <string name="http_auth_dialog_password">Contraseña</string>
+    <string name="http_auth_dialog_title">Especifique sus credenciales</string>
+    <string name="http_auth_dialog_username">Nombre de usuario</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Buscar"</string>
+    <string name="smartcard_cert_dialog_negative_button">Cancelar</string>
+    <string name="smartcard_cert_dialog_positive_button">Continuar</string>
+    <string name="smartcard_cert_dialog_title">Seleccionar un certificado con el que iniciar sesión</string>
+    <string name="smartcard_early_unplug_dialog_message">Se quitó el dispositivo de tarjeta inteligente. Vuelva a insertar el dispositivo antes de intentar iniciar sesión de nuevo.</string>
+    <string name="smartcard_early_unplug_dialog_title">Vuelva a intentarlo</string>
+    <string name="smartcard_error_dialog_positive_button">Aceptar</string>
+    <string name="smartcard_general_error_dialog_message">Ha ocurrido un error inesperado. Inténtalo de nuevo más tarde.</string>
+    <string name="smartcard_general_error_dialog_title">Volver a intentarlo más tarde</string>
+    <string name="smartcard_max_attempt_dialog_message">Demasiados intentos fallidos, inténtelo de nuevo más tarde.</string>
+    <string name="smartcard_max_attempt_dialog_title">Volver a intentarlo más tarde</string>
+    <string name="smartcard_nfc_diff_connected_message">Usa la tarjeta inteligente con la que iniciaste sesión originalmente.</string>
+    <string name="smartcard_nfc_diff_connected_positive_button">Entendido</string>
+    <string name="smartcard_nfc_diff_connected_title">Solo se puede usar una tarjeta inteligente a la vez</string>
+    <string name="smartcard_nfc_loading_dialog_message">Mantenga la tarjeta inteligente en su lugar.</string>
+    <string name="smartcard_nfc_loading_dialog_title">Leyendo la tarjeta inteligente</string>
+    <string name="smartcard_nfc_prompt_dialog_message">Mantenga una tarjeta inteligente en la parte posterior del teléfono.</string>
+    <string name="smartcard_nfc_prompt_dialog_negative_button">Cancelar</string>
+    <string name="smartcard_nfc_prompt_dialog_title">Preparar la tarjeta inteligente</string>
+    <string name="smartcard_nfc_reminder_dialog_message">Para iniciar sesión con NFC, active NFC en la configuración del dispositivo. Después, vuelva a iniciar sesión.</string>
+    <string name="smartcard_nfc_reminder_dialog_positive_button">Entendido</string>
+    <string name="smartcard_nfc_reminder_dialog_title">Activar NFC en la configuración del dispositivo</string>
+    <string name="smartcard_no_cert_dialog_message">Confirme que el certificado se ha aprovisionado correctamente en el dispositivo de tarjeta inteligente.</string>
+    <string name="smartcard_no_cert_dialog_title">No se encontraron certificados aplicables.</string>
+    <string name="smartcard_pin_dialog_error_message">El PIN que introdujo no es correcto</string>
+    <string name="smartcard_pin_dialog_message">Escribir el PIN de la tarjeta inteligente para acceder al certificado e iniciar sesión</string>
+    <string name="smartcard_pin_dialog_negative_button">Cancelar</string>
+    <string name="smartcard_pin_dialog_positive_button">Desbloquear</string>
+    <string name="smartcard_pin_dialog_title">Desbloquear tarjeta inteligente</string>
+    <string name="smartcard_pin_layout_edittext_hint">PIN</string>
+    <string name="smartcard_prompt_dialog_message">Conecte o mantenga presionada una tarjeta inteligente en la parte posterior del teléfono.</string>
+    <string name="smartcard_prompt_dialog_negative_button">Cancelar</string>
+    <string name="smartcard_prompt_dialog_title">Preparar la tarjeta inteligente</string>
+    <string name="smartcard_removal_prompt_dialog_positive_button">Entendido</string>
+    <string name="smartcard_removal_prompt_dialog_title">Ahora es posible quitar la tarjeta inteligente</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="user_choice_dialog_negative_button">Cancelar</string>
+    <string name="user_choice_dialog_on_device_name">Certificado en este dispositivo</string>
+    <string name="user_choice_dialog_positive_button">Continuar</string>
+    <string name="user_choice_dialog_smartcard_name">Tarjeta inteligente física</string>
+    <string name="user_choice_dialog_title">¿Cómo desea iniciar sesión?</string>
 </resources>

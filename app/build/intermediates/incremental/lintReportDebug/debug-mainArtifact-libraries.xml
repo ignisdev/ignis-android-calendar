@@ -1,5 +1,18 @@
 <libraries>
   <library
+      name="com.microsoft.identity.client:msal:4.9.0@aar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0/jars/classes.jar"
+      resolved="com.microsoft.identity.client:msal:4.9.0"
+      folder="/Users/eamon/.gradle/caches/transforms-3/f64cb4ef48ecf1c1992ca2b224d23d37/transformed/msal-4.9.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="androidx.appcompat:appcompat:1.6.1@aar"
       jars="/Users/eamon/.gradle/caches/transforms-3/ba5b5352b8b145ec4650912ae02cb54a/transformed/appcompat-1.6.1/jars/classes.jar"
       resolved="androidx.appcompat:appcompat:1.6.1"
@@ -40,9 +53,9 @@
       proguardRules="proguard.txt"/>
   <library
       name="androidx.activity:activity:1.6.0@aar"
-      jars="/Users/eamon/.gradle/caches/transforms-3/4bccf4c3e24bcfdbdc18bca34279f0d9/transformed/jetified-activity-1.6.0/jars/classes.jar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/79a5e3056e747d93ea7b3c209d5a095c/transformed/activity-1.6.0/jars/classes.jar"
       resolved="androidx.activity:activity:1.6.0"
-      folder="/Users/eamon/.gradle/caches/transforms-3/4bccf4c3e24bcfdbdc18bca34279f0d9/transformed/jetified-activity-1.6.0"
+      folder="/Users/eamon/.gradle/caches/transforms-3/79a5e3056e747d93ea7b3c209d5a095c/transformed/activity-1.6.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -53,9 +66,22 @@
       proguardRules="proguard.txt"/>
   <library
       name="androidx.appcompat:appcompat-resources:1.6.1@aar"
-      jars="/Users/eamon/.gradle/caches/transforms-3/706aad7209b264624594ddf595ce5e6b/transformed/jetified-appcompat-resources-1.6.1/jars/classes.jar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/ab3b53702ea48e73d387bc87db5d7130/transformed/appcompat-resources-1.6.1/jars/classes.jar"
       resolved="androidx.appcompat:appcompat-resources:1.6.1"
-      folder="/Users/eamon/.gradle/caches/transforms-3/706aad7209b264624594ddf595ce5e6b/transformed/jetified-appcompat-resources-1.6.1"
+      folder="/Users/eamon/.gradle/caches/transforms-3/ab3b53702ea48e73d387bc87db5d7130/transformed/appcompat-resources-1.6.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.browser:browser:1.0.0@aar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/08a4c617dc9de200de2b29b7266cfbdb/transformed/browser-1.0.0/jars/classes.jar"
+      resolved="androidx.browser:browser:1.0.0"
+      folder="/Users/eamon/.gradle/caches/transforms-3/08a4c617dc9de200de2b29b7266cfbdb/transformed/browser-1.0.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -235,9 +261,9 @@
       proguardRules="proguard.txt"/>
   <library
       name="androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1@aar"
-      jars="/Users/eamon/.gradle/caches/transforms-3/0b1ca1164bbef28bae65105f3af3d706/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/jars/classes.jar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/2fa8fc2061306d8664cb40aa946995f3/transformed/lifecycle-viewmodel-savedstate-2.5.1/jars/classes.jar"
       resolved="androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1"
-      folder="/Users/eamon/.gradle/caches/transforms-3/0b1ca1164bbef28bae65105f3af3d706/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1"
+      folder="/Users/eamon/.gradle/caches/transforms-3/2fa8fc2061306d8664cb40aa946995f3/transformed/lifecycle-viewmodel-savedstate-2.5.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -248,9 +274,9 @@
       proguardRules="proguard.txt"/>
   <library
       name="androidx.core:core-ktx:1.9.0@aar"
-      jars="/Users/eamon/.gradle/caches/transforms-3/a174ab8f1781a8dcd0e07d3bd70c3866/transformed/jetified-core-ktx-1.9.0/jars/classes.jar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/84c733ff6bb50f2ba10bc0e2534a1a79/transformed/core-ktx-1.9.0/jars/classes.jar"
       resolved="androidx.core:core-ktx:1.9.0"
-      folder="/Users/eamon/.gradle/caches/transforms-3/a174ab8f1781a8dcd0e07d3bd70c3866/transformed/jetified-core-ktx-1.9.0"
+      folder="/Users/eamon/.gradle/caches/transforms-3/84c733ff6bb50f2ba10bc0e2534a1a79/transformed/core-ktx-1.9.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -287,9 +313,9 @@
       proguardRules="proguard.txt"/>
   <library
       name="androidx.savedstate:savedstate:1.2.0@aar"
-      jars="/Users/eamon/.gradle/caches/transforms-3/9b07b226cce3cff93aba050b9b24206e/transformed/jetified-savedstate-1.2.0/jars/classes.jar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/9598c5eb8ab783e71dacdc477563e96c/transformed/savedstate-1.2.0/jars/classes.jar"
       resolved="androidx.savedstate:savedstate:1.2.0"
-      folder="/Users/eamon/.gradle/caches/transforms-3/9b07b226cce3cff93aba050b9b24206e/transformed/jetified-savedstate-1.2.0"
+      folder="/Users/eamon/.gradle/caches/transforms-3/9598c5eb8ab783e71dacdc477563e96c/transformed/savedstate-1.2.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -446,9 +472,9 @@
       resolved="androidx.annotation:annotation:1.3.0"/>
   <library
       name="androidx.annotation:annotation-experimental:1.3.0@aar"
-      jars="/Users/eamon/.gradle/caches/transforms-3/26adbcd8585eeada7bfc59fd53ee450d/transformed/jetified-annotation-experimental-1.3.0/jars/classes.jar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/b9d501853a9ed8f3b639ab2f7be4741c/transformed/annotation-experimental-1.3.0/jars/classes.jar"
       resolved="androidx.annotation:annotation-experimental:1.3.0"
-      folder="/Users/eamon/.gradle/caches/transforms-3/26adbcd8585eeada7bfc59fd53ee450d/transformed/jetified-annotation-experimental-1.3.0"
+      folder="/Users/eamon/.gradle/caches/transforms-3/b9d501853a9ed8f3b639ab2f7be4741c/transformed/annotation-experimental-1.3.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -458,38 +484,168 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1@jar"
-      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.1/97fd74ccf54a863d221956ffcd21835e168e2aaa/kotlinx-coroutines-core-jvm-1.6.1.jar"
-      resolved="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1"/>
+      name="com.microsoft.graph:microsoft-graph:6.15.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.microsoft.graph/microsoft-graph/6.15.0/a9fe879e378c6f7d300ce5d058480a6124982f3d/microsoft-graph-6.15.0.jar"
+      resolved="com.microsoft.graph:microsoft-graph:6.15.0"/>
   <library
-      name="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1@jar"
-      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.1/4e61fcdcc508cbaa37c4a284a50205d7c7767e37/kotlinx-coroutines-android-1.6.1.jar"
-      resolved="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1"/>
+      name="com.microsoft.graph:microsoft-graph-core:3.2.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.microsoft.graph/microsoft-graph-core/3.2.0/82a73a3070b4c9fb192350c4efe63a7ab0a50601/microsoft-graph-core-3.2.0.jar"
+      resolved="com.microsoft.graph:microsoft-graph-core:3.2.0"/>
   <library
-      name="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0@jar"
-      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.6.0/baf82c475e9372c25407f3d132439e4aa803b8b8/kotlin-stdlib-jdk8-1.6.0.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0"/>
+      name="com.squareup.okhttp3:okhttp:4.12.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/4.12.0/2f4525d4a200e97e1b87449c2cd9bd2e25b7e8cd/okhttp-4.12.0.jar"
+      resolved="com.squareup.okhttp3:okhttp:4.12.0"/>
   <library
-      name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.0@jar"
-      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.6.0/da6bdc87391322974a43ccc00a25536ae74dad51/kotlin-stdlib-jdk7-1.6.0.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.0"/>
+      name="com.squareup.okio:okio-jvm:3.6.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio-jvm/3.6.0/5600569133b7bdefe1daf9ec7f4abeb6d13e1786/okio-jvm-3.6.0.jar"
+      resolved="com.squareup.okio:okio-jvm:3.6.0"/>
   <library
-      name="org.jetbrains.kotlin:kotlin-stdlib:1.7.10@jar"
-      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.7.10/d2abf9e77736acc4450dc4a3f707fa2c10f5099d/kotlin-stdlib-1.7.10.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib:1.7.10"/>
+      name="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.4/2c997cd1c0ef33f3e751d3831929aeff1390cb30/kotlinx-coroutines-core-jvm-1.6.4.jar"
+      resolved="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4"/>
   <library
-      name="org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10@jar"
-      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.7.10/bac80c520d0a9e3f3673bc2658c6ed02ef45a76a/kotlin-stdlib-common-1.7.10.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10"/>
+      name="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.4/f955fc8b2ad196e2f4429598440e15f7492eeb2b/kotlinx-coroutines-android-1.6.4.jar"
+      resolved="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.10@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.9.10/c7510d64a83411a649c76f2778304ddf71d7437b/kotlin-stdlib-jdk8-1.9.10.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.10"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.10@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.9.10/bc5bfc2690338defd5195b05c57562f2194eeb10/kotlin-stdlib-jdk7-1.9.10.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.10"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-stdlib:1.9.10@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.10/72812e8a368917ab5c0a5081b56915ffdfec93b7/kotlin-stdlib-1.9.10.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib:1.9.10"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-stdlib-common:1.9.10@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.9.10/dafaf2c27f27c09220cee312df10917d9a5d97ce/kotlin-stdlib-common-1.9.10.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib-common:1.9.10"/>
   <library
       name="org.jetbrains:annotations:13.0@jar"
       jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar"
       resolved="org.jetbrains:annotations:13.0"/>
   <library
+      name="com.microsoft.kiota:microsoft-kiota-authentication-azure:1.3.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.microsoft.kiota/microsoft-kiota-authentication-azure/1.3.0/30a4f1a2f4d576423645c89a07ccfae2b86cf338/microsoft-kiota-authentication-azure-1.3.0.jar"
+      resolved="com.microsoft.kiota:microsoft-kiota-authentication-azure:1.3.0"/>
+  <library
+      name="io.opentelemetry:opentelemetry-api:1.41.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-api/1.41.0/ec5ad3b420c9fba4b340e85a3199fd0f2accd023/opentelemetry-api-1.41.0.jar"
+      resolved="io.opentelemetry:opentelemetry-api:1.41.0"/>
+  <library
+      name="io.opentelemetry:opentelemetry-context:1.41.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-context/1.41.0/3d7cf15ef425053e24e825160ca7b4ac08d721aa/opentelemetry-context-1.41.0.jar"
+      resolved="io.opentelemetry:opentelemetry-context:1.41.0"/>
+  <library
+      name="com.azure:azure-core:1.51.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.azure/azure-core/1.51.0/ff5d0aedf75ca45ec0ace24673f790d2f7a57096/azure-core-1.51.0.jar"
+      resolved="com.azure:azure-core:1.51.0"/>
+  <library
+      name="com.azure:azure-json:1.2.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.azure/azure-json/1.2.0/d7c1f2d7256e73df17538c296c360649757e3c5b/azure-json-1.2.0.jar"
+      resolved="com.azure:azure-json:1.2.0"/>
+  <library
+      name="com.azure:azure-xml:1.1.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.azure/azure-xml/1.1.0/8218a00c07f9f66d5dc7ae2ba613da6890867497/azure-xml-1.1.0.jar"
+      resolved="com.azure:azure-xml:1.1.0"/>
+  <library
+      name="com.fasterxml.jackson.core:jackson-core:2.17.2@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.17.2/969a35cb35c86512acbadcdbbbfb044c877db814/jackson-core-2.17.2.jar"
+      resolved="com.fasterxml.jackson.core:jackson-core:2.17.2"/>
+  <library
+      name="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.17.2@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.17.2/267b85e9ba2892a37be6d80aa9ca1438a0d8c210/jackson-datatype-jsr310-2.17.2.jar"
+      resolved="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.17.2"/>
+  <library
+      name="com.fasterxml.jackson.core:jackson-databind:2.17.2@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.17.2/e6deb029e5901e027c129341fac39e515066b68c/jackson-databind-2.17.2.jar"
+      resolved="com.fasterxml.jackson.core:jackson-databind:2.17.2"/>
+  <library
+      name="com.fasterxml.jackson.core:jackson-annotations:2.17.2@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.17.2/147b7b9412ffff24339f8aba080b292448e08698/jackson-annotations-2.17.2.jar"
+      resolved="com.fasterxml.jackson.core:jackson-annotations:2.17.2"/>
+  <library
+      name="org.slf4j:slf4j-api:2.0.7@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.7/41eb7184ea9d556f23e18b5cb99cad1f8581fc00/slf4j-api-2.0.7.jar"
+      resolved="org.slf4j:slf4j-api:2.0.7"/>
+  <library
+      name="io.projectreactor:reactor-core:3.4.38@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.4.38/94178266e36e6de6338a1c180efaddcff0251002/reactor-core-3.4.38.jar"
+      resolved="io.projectreactor:reactor-core:3.4.38"/>
+  <library
+      name="org.reactivestreams:reactive-streams:1.0.4@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.4/3864a1320d97d7b045f729a326e1e077661f31b7/reactive-streams-1.0.4.jar"
+      resolved="org.reactivestreams:reactive-streams:1.0.4"/>
+  <library
+      name="com.microsoft.kiota:microsoft-kiota-abstractions:1.3.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.microsoft.kiota/microsoft-kiota-abstractions/1.3.0/4bab994e33fbc681577b2030d079a6b9399bbef6/microsoft-kiota-abstractions-1.3.0.jar"
+      resolved="com.microsoft.kiota:microsoft-kiota-abstractions:1.3.0"/>
+  <library
+      name="com.google.code.gson:gson:2.11.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.11.0/527175ca6d81050b53bdd4c457a6d6e017626b0e/gson-2.11.0.jar"
+      resolved="com.google.code.gson:gson:2.11.0"/>
+  <library
+      name="com.google.errorprone:error_prone_annotations:2.27.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.27.0/91b2c29d8a6148b5e2e4930f070d4840e2e48e34/error_prone_annotations-2.27.0.jar"
+      resolved="com.google.errorprone:error_prone_annotations:2.27.0"/>
+  <library
+      name="com.nimbusds:nimbus-jose-jwt:9.9@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.nimbusds/nimbus-jose-jwt/9.9/baf7605d131ffc7f69693e40b6313a638c6caf79/nimbus-jose-jwt-9.9.jar"
+      resolved="com.nimbusds:nimbus-jose-jwt:9.9"/>
+  <library
+      name="com.github.stephenc.jcip:jcip-annotations:1.0-1@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.github.stephenc.jcip/jcip-annotations/1.0-1/ef31541dd28ae2cefdd17c7ebf352d93e9058c63/jcip-annotations-1.0-1.jar"
+      resolved="com.github.stephenc.jcip:jcip-annotations:1.0-1"/>
+  <library
+      name="cz.msebera.android:httpclient:4.5.8@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/cz.msebera.android/httpclient/4.5.8/55c5c963fe78669912bf032ceef7ef3e81bdb6c3/httpclient-4.5.8.jar"
+      resolved="cz.msebera.android:httpclient:4.5.8"/>
+  <library
+      name="androidx.constraintlayout:constraintlayout:1.1.3@aar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/bcc3c3ee40bbfddcd86c4e7b615894f9/transformed/constraintlayout-1.1.3/jars/classes.jar"
+      resolved="androidx.constraintlayout:constraintlayout:1.1.3"
+      folder="/Users/eamon/.gradle/caches/transforms-3/bcc3c3ee40bbfddcd86c4e7b615894f9/transformed/constraintlayout-1.1.3"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.constraintlayout:constraintlayout-solver:1.1.3@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/androidx.constraintlayout/constraintlayout-solver/1.1.3/54abe9ffb22cc9019b0b6fcc10f185cc4e67b34e/constraintlayout-solver-1.1.3.jar"
+      resolved="androidx.constraintlayout:constraintlayout-solver:1.1.3"/>
+  <library
+      name="com.microsoft.identity:common:16.1.0@aar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0/jars/classes.jar"
+      resolved="com.microsoft.identity:common:16.1.0"
+      folder="/Users/eamon/.gradle/caches/transforms-3/b15ee9a1e79bb1ba40d5533a864f5868/transformed/common-16.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.microsoft.identity:common4j:13.1.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.microsoft.identity/common4j/13.1.0/9c6304bfbc4bbfe2fdbbd780c359619ac66d2e6/common4j-13.1.0.jar"
+      resolved="com.microsoft.identity:common4j:13.1.0"/>
+  <library
+      name="com.microsoft.kiota:microsoft-kiota-http-okHttp:1.3.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.microsoft.kiota/microsoft-kiota-http-okHttp/1.3.0/2078589160396bd8ca12992d4fc6d0ade4fe971c/microsoft-kiota-http-okHttp-1.3.0.jar"
+      resolved="com.microsoft.kiota:microsoft-kiota-http-okHttp:1.3.0"/>
+  <library
       name="androidx.emoji2:emoji2-views-helper:1.2.0@aar"
-      jars="/Users/eamon/.gradle/caches/transforms-3/95de9e4119ad591711a16fe71a93ec3e/transformed/jetified-emoji2-views-helper-1.2.0/jars/classes.jar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/edf64bed91c021ffcf84563030942e57/transformed/emoji2-views-helper-1.2.0/jars/classes.jar"
       resolved="androidx.emoji2:emoji2-views-helper:1.2.0"
-      folder="/Users/eamon/.gradle/caches/transforms-3/95de9e4119ad591711a16fe71a93ec3e/transformed/jetified-emoji2-views-helper-1.2.0"
+      folder="/Users/eamon/.gradle/caches/transforms-3/edf64bed91c021ffcf84563030942e57/transformed/emoji2-views-helper-1.2.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -500,9 +656,9 @@
       proguardRules="proguard.txt"/>
   <library
       name="androidx.emoji2:emoji2:1.2.0@aar"
-      jars="/Users/eamon/.gradle/caches/transforms-3/97e468b2ae8f16656080115164696a75/transformed/jetified-emoji2-1.2.0/jars/classes.jar:/Users/eamon/.gradle/caches/transforms-3/97e468b2ae8f16656080115164696a75/transformed/jetified-emoji2-1.2.0/jars/libs/repackaged.jar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/98441c11c46f6419e4f55d0f1c9541f5/transformed/emoji2-1.2.0/jars/classes.jar:/Users/eamon/.gradle/caches/transforms-3/98441c11c46f6419e4f55d0f1c9541f5/transformed/emoji2-1.2.0/jars/libs/repackaged.jar"
       resolved="androidx.emoji2:emoji2:1.2.0"
-      folder="/Users/eamon/.gradle/caches/transforms-3/97e468b2ae8f16656080115164696a75/transformed/jetified-emoji2-1.2.0"
+      folder="/Users/eamon/.gradle/caches/transforms-3/98441c11c46f6419e4f55d0f1c9541f5/transformed/emoji2-1.2.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -513,9 +669,9 @@
       proguardRules="proguard.txt"/>
   <library
       name="androidx.lifecycle:lifecycle-process:2.4.1@aar"
-      jars="/Users/eamon/.gradle/caches/transforms-3/ab97335a65fd3990eb1de4486ad16c03/transformed/jetified-lifecycle-process-2.4.1/jars/classes.jar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/3285ad8cd6936baf05f330eb2a872533/transformed/lifecycle-process-2.4.1/jars/classes.jar"
       resolved="androidx.lifecycle:lifecycle-process:2.4.1"
-      folder="/Users/eamon/.gradle/caches/transforms-3/ab97335a65fd3990eb1de4486ad16c03/transformed/jetified-lifecycle-process-2.4.1"
+      folder="/Users/eamon/.gradle/caches/transforms-3/3285ad8cd6936baf05f330eb2a872533/transformed/lifecycle-process-2.4.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -530,9 +686,9 @@
       resolved="androidx.resourceinspection:resourceinspection-annotation:1.0.1"/>
   <library
       name="androidx.startup:startup-runtime:1.1.1@aar"
-      jars="/Users/eamon/.gradle/caches/transforms-3/88f61265f2a3c2ac0e41595ecbb35960/transformed/jetified-startup-runtime-1.1.1/jars/classes.jar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/17cd7e5af6f7d66d17b951b3f7baff52/transformed/startup-runtime-1.1.1/jars/classes.jar"
       resolved="androidx.startup:startup-runtime:1.1.1"
-      folder="/Users/eamon/.gradle/caches/transforms-3/88f61265f2a3c2ac0e41595ecbb35960/transformed/jetified-startup-runtime-1.1.1"
+      folder="/Users/eamon/.gradle/caches/transforms-3/17cd7e5af6f7d66d17b951b3f7baff52/transformed/startup-runtime-1.1.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -543,9 +699,9 @@
       proguardRules="proguard.txt"/>
   <library
       name="androidx.tracing:tracing:1.0.0@aar"
-      jars="/Users/eamon/.gradle/caches/transforms-3/34d8a08aa29d9d31f31bb6ecc23a295e/transformed/jetified-tracing-1.0.0/jars/classes.jar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/db33129faae7d47b11379552c3bd0280/transformed/tracing-1.0.0/jars/classes.jar"
       resolved="androidx.tracing:tracing:1.0.0"
-      folder="/Users/eamon/.gradle/caches/transforms-3/34d8a08aa29d9d31f31bb6ecc23a295e/transformed/jetified-tracing-1.0.0"
+      folder="/Users/eamon/.gradle/caches/transforms-3/db33129faae7d47b11379552c3bd0280/transformed/tracing-1.0.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -559,7 +715,94 @@
       jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/androidx.concurrent/concurrent-futures/1.0.0/c1e77e3ee6f4643b77496a1ddf7a2eef1aefdaa1/concurrent-futures-1.0.0.jar"
       resolved="androidx.concurrent:concurrent-futures:1.0.0"/>
   <library
+      name="androidx.datastore:datastore-preferences:1.0.0@aar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/2e3b97d9b9ba17d2cec271abedf26f94/transformed/datastore-preferences-1.0.0/jars/classes.jar"
+      resolved="androidx.datastore:datastore-preferences:1.0.0"
+      folder="/Users/eamon/.gradle/caches/transforms-3/2e3b97d9b9ba17d2cec271abedf26f94/transformed/datastore-preferences-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.datastore:datastore:1.0.0@aar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/f6bef08f78b262daf272349919059f06/transformed/datastore-1.0.0/jars/classes.jar"
+      resolved="androidx.datastore:datastore:1.0.0"
+      folder="/Users/eamon/.gradle/caches/transforms-3/f6bef08f78b262daf272349919059f06/transformed/datastore-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.datastore:datastore-preferences-core:1.0.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/androidx.datastore/datastore-preferences-core/1.0.0/403f64499b9a8994f5f7010329ddd1ee5c919ed5/datastore-preferences-core-1.0.0.jar"
+      resolved="androidx.datastore:datastore-preferences-core:1.0.0"/>
+  <library
+      name="androidx.datastore:datastore-core:1.0.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/androidx.datastore/datastore-core/1.0.0/91b04fb657294e2906d95dce6a9e5a851f6125c1/datastore-core-1.0.0.jar"
+      resolved="androidx.datastore:datastore-core:1.0.0"/>
+  <library
+      name="com.squareup.moshi:moshi:1.12.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.squareup.moshi/moshi/1.12.0/acd95d4d815f2752e6507e29e92b258c1323c38d/moshi-1.12.0.jar"
+      resolved="com.squareup.moshi:moshi:1.12.0"/>
+  <library
+      name="com.microsoft.kiota:microsoft-kiota-serialization-json:1.3.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.microsoft.kiota/microsoft-kiota-serialization-json/1.3.0/ce9c18bdf801fb11075322cc8f33b3c027140494/microsoft-kiota-serialization-json-1.3.0.jar"
+      resolved="com.microsoft.kiota:microsoft-kiota-serialization-json:1.3.0"/>
+  <library
+      name="com.microsoft.kiota:microsoft-kiota-serialization-text:1.3.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.microsoft.kiota/microsoft-kiota-serialization-text/1.3.0/28cbee799f65cdee8ae90944fe18255ef842b43e/microsoft-kiota-serialization-text-1.3.0.jar"
+      resolved="com.microsoft.kiota:microsoft-kiota-serialization-text:1.3.0"/>
+  <library
+      name="com.microsoft.kiota:microsoft-kiota-serialization-form:1.3.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.microsoft.kiota/microsoft-kiota-serialization-form/1.3.0/d7f013cae0dad644908cba7a16f4a903aee6bcdf/microsoft-kiota-serialization-form-1.3.0.jar"
+      resolved="com.microsoft.kiota:microsoft-kiota-serialization-form:1.3.0"/>
+  <library
+      name="com.microsoft.kiota:microsoft-kiota-serialization-multipart:1.3.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.microsoft.kiota/microsoft-kiota-serialization-multipart/1.3.0/ad6d38f3220c9e550fc0ba3bc42537e2211567dc/microsoft-kiota-serialization-multipart-1.3.0.jar"
+      resolved="com.microsoft.kiota:microsoft-kiota-serialization-multipart:1.3.0"/>
+  <library
+      name="jakarta.annotation:jakarta.annotation-api:2.1.1@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/2.1.1/48b9bda22b091b1f48b13af03fe36db3be6e1ae3/jakarta.annotation-api-2.1.1.jar"
+      resolved="jakarta.annotation:jakarta.annotation-api:2.1.1"/>
+  <library
+      name="com.microsoft.device.display:display-mask:0.3.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.microsoft.device.display/display-mask/0.3.0/afed445f24d7e59eede44bf974995860e568c8bd/display-mask-0.3.0.jar"
+      resolved="com.microsoft.device.display:display-mask:0.3.0"/>
+  <library
+      name="com.yubico.yubikit:android:2.3.0@aar"
+      jars="/Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0/jars/classes.jar"
+      resolved="com.yubico.yubikit:android:2.3.0"
+      folder="/Users/eamon/.gradle/caches/transforms-3/bbf87598aa727b658fb6471712c52bac/transformed/android-2.3.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.yubico.yubikit:piv:2.3.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.yubico.yubikit/piv/2.3.0/9d2f75cefdaa14350f9a21ed8ce5900b15ff11d5/piv-2.3.0.jar"
+      resolved="com.yubico.yubikit:piv:2.3.0"/>
+  <library
       name="com.google.guava:listenablefuture:1.0@jar"
       jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/1.0/c949a840a6acbc5268d088e47b04177bf90b3cad/listenablefuture-1.0.jar"
       resolved="com.google.guava:listenablefuture:1.0"/>
+  <library
+      name="com.yubico.yubikit:core:2.3.0@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/com.yubico.yubikit/core/2.3.0/2010623d8f6f11699558b0101b46691ae7dd7edd/core-2.3.0.jar"
+      resolved="com.yubico.yubikit:core:2.3.0"/>
+  <library
+      name="io.github.std-uritemplate:std-uritemplate:1.0.5@jar"
+      jars="/Users/eamon/.gradle/caches/modules-2/files-2.1/io.github.std-uritemplate/std-uritemplate/1.0.5/fd41f599c83f2d5ffdbfab284ce9ff9c88652784/std-uritemplate-1.0.5.jar"
+      resolved="io.github.std-uritemplate:std-uritemplate:1.0.5"/>
 </libraries>

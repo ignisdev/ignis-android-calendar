@@ -2,6 +2,50 @@
 <incidents format="6" by="lint 8.1.4" type="conditional_incidents">
 
     <incident
+        id="ScopedStorage"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="16"
+            column="36"
+            startOffset="687"
+            endLine="16"
+            endColumn="76"
+            endOffset="727"/>
+        <map>
+            <entry
+                name="maxSdkVersion"
+                int="2147483647"/>
+            <entry
+                name="read"
+                boolean="true"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ScopedStorage"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="17"
+            column="36"
+            startOffset="767"
+            endLine="17"
+            endColumn="77"
+            endOffset="808"/>
+        <map>
+            <entry
+                name="maxSdkVersion"
+                int="2147483647"/>
+            <entry
+                name="read"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
         id="RtlHardcoded"
         severity="warning"
         message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;32dp&quot;` to better support right-to-left layouts">

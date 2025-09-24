@@ -6,7 +6,7 @@ android {
     
     defaultConfig {
         applicationId "com.meetingroom.display"
-        minSdkVersion 22
+        minSdkVersion 26
         targetSdkVersion 34
         versionCode 1
         versionName "1.0"
@@ -28,7 +28,13 @@ android {
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    // Add the Microsoft Graph SDK for Java
-    // implementation 'com.microsoft.graph:microsoft-graph:5.44.0'
-    // implementation 'com.azure:azure-identity:1.9.0'
+    
+    // Microsoft Graph SDK for Android - latest stable version
+    implementation 'com.microsoft.graph:microsoft-graph:6.15.0'
+    
+    // Microsoft Authentication Library (MSAL) for Android
+    implementation 'com.microsoft.identity.client:msal:4.9.0'
+    
+    // HTTP client for Graph requests
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
 }

@@ -1,3 +1,40 @@
+/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:16: Warning: READ_EXTERNAL_STORAGE is deprecated (and is not granted) when targeting Android 13+. If you need to query or interact with MediaStore or media files on the shared storage, you should instead use one or more new storage permissions: READ_MEDIA_IMAGES, READ_MEDIA_VIDEO or READ_MEDIA_AUDIO. [ScopedStorage]
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:17: Warning: WRITE_EXTERNAL_STORAGE is deprecated (and is not granted) when targeting Android 13+. If you need to write to shared storage, use the MediaStore.createWriteRequest intent. [ScopedStorage]
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ScopedStorage":
+   Scoped storage is enforced on Android 10+ (or Android 11+ if using
+   requestLegacyExternalStorage). In particular, WRITE_EXTERNAL_STORAGE will
+   no longer provide write access to all files; it will provide the equivalent
+   of READ_EXTERNAL_STORAGE instead.
+
+   As of Android 13, if you need to query or interact with MediaStore or media
+   files on the shared storage, you should be using instead one or more new
+   storage permissions:
+   * android.permission.READ_MEDIA_IMAGES
+   * android.permission.READ_MEDIA_VIDEO
+   * android.permission.READ_MEDIA_AUDIO
+
+   and then add maxSdkVersion="33" to the older permission. See the developer
+   guide for how to do this:
+   https://developer.android.com/about/versions/13/behavior-changes-13#granula
+   r-media-permissions
+
+   The MANAGE_EXTERNAL_STORAGE permission can be used to manage all files, but
+   it is rarely necessary and most apps on Google Play are not allowed to use
+   it. Most apps should instead migrate to use scoped storage. To modify or
+   delete files, apps should request write access from the user as described
+   at https://goo.gle/android-mediastore-createwriterequest.
+
+   To learn more, read these resources: Play policy:
+   https://goo.gle/policy-storage-help Allowable use cases:
+   https://goo.gle/policy-storage-usecases
+
+   https://goo.gle/android-storage-usecases
+
 /Users/eamon/Projects/ignis-android-calendar/app/src/main/res/layout/activity_main.xml:236: Warning: The vertically scrolling ScrollView should not contain another vertically scrolling widget (ListView) [NestedScrolling]
             <ListView
              ~~~~~~~~
@@ -42,7 +79,7 @@
    However, you may simply not be aware that a more recent version is
    available, and that is what this lint check helps find.
 
-/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:6: Warning: This minSdkVersion value (22) is not used; it is always overridden by the value specified in the Gradle build script (22) [GradleOverrides]
+/Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:6: Warning: This minSdkVersion value (22) is not used; it is always overridden by the value specified in the Gradle build script (26) [GradleOverrides]
         android:minSdkVersion="22"
         ~~~~~~~~~~~~~~~~~~~~~~~~~~
 /Users/eamon/Projects/ignis-android-calendar/app/src/main/AndroidManifest.xml:7: Warning: This targetSdkVersion value (22) is not used; it is always overridden by the value specified in the Gradle build script (34) [GradleOverrides]
@@ -348,4 +385,4 @@
    If you have started adding RTL attributes, but have not yet finished the
    migration, you can set the attribute to false to satisfy this lint check.
 
-0 errors, 65 warnings
+0 errors, 67 warnings

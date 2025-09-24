@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.meetingroom.display.app-mergeReleaseResources-20:/values-gu/values-gu.xml",
+            "outputFile": "com.meetingroom.display.app-mergeReleaseResources-27:/values-gu/values-gu.xml",
             "map": [
                 {
                     "source": "/Users/eamon/.gradle/caches/transforms-3/47e328fbb9a6da19e7cdd96cc41cfa33/transformed/core-1.9.0/res/values-gu/values-gu.xml",

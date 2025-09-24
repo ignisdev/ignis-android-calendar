@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.meetingroom.display.app-mergeDebugResources-20:/values-port/values-port.xml",
+            "outputFile": "com.meetingroom.display.app-mergeDebugResources-27:/values-port/values-port.xml",
             "map": [
                 {
                     "source": "/Users/eamon/.gradle/caches/transforms-3/ba5b5352b8b145ec4650912ae02cb54a/transformed/appcompat-1.6.1/res/values-port/values-port.xml",

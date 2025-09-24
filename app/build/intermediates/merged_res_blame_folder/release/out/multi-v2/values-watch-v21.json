@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.meetingroom.display.app-mergeReleaseResources-20:/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "com.meetingroom.display.app-mergeReleaseResources-27:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
                     "source": "/Users/eamon/.gradle/caches/transforms-3/ba5b5352b8b145ec4650912ae02cb54a/transformed/appcompat-1.6.1/res/values-watch-v21/values-watch-v21.xml",
