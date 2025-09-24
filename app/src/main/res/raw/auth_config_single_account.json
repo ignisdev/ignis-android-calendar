@@ -1,0 +1,14 @@
+{
+  "client_id" : "5da063ae-45f0-4037-9db5-963c94ac2939",
+  "authorization_user_agent" : "DEFAULT",
+  "redirect_uri" : "msauth://com.meetingroom.display/ln6yzrD2U58RkmRuLqdNyrvwpw0%3D",
+  "authorities" : [
+    {
+      "type": "AAD",
+      "audience": {
+        "type": "AzureADMyOrg",
+        "tenant_id": "926c2bfb-d03c-4978-913a-98069f2e1bce"
+      }
+    }
+  ]
+}
